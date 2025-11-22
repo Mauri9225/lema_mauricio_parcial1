@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <h1>Secuencia de Fibonacci</h1>
+        
+        <div class="panel-control">
+            <label for="input-cantidad">Cantidad de números de Fibonacci:</label>
+            <input type="number" id="input-cantidad" min="1" max="50" value="10">
+            <button id="btn-generar">Generar</button>
+            <button id="btn-limpiar">Limpiar</button>
+        </div>
+
+        <p id="mensaje-error" class="error-msg"></p>
+
+        <div id="contenedor-tarjetas" class="contenedor-tarjetas">
+            </div>
+
+        <hr>
+
+        <div class="panel-estadisticas">
+            <h2>Resumen Estadístico</h2>
+            <p>Total de números generados: <span id="stat-total">0</span></p>
+            <p>Cantidad de números pares: <span id="stat-pares">0</span></p>
+            <p>Cantidad de números impares: <span id="stat-impares">0</span></p>
+            <p>Suma de todos los números: <span id="stat-suma">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
